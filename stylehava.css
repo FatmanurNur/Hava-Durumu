@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui,sans-serif;
+    color: #fff;
+    background-image: url(images/images1.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .7); /*oppacity veriyor */
+    height: 100vh;
+}
+.header{
+    padding: 50px ; 
+} 
+.header h1{
+        font-size: 50px;
+        color: blue;
+     }
+     .header input{
+        width: 100%;
+        padding: 10px;
+        background:rgb(90, 185, 240);
+        color: #fff;
+        font-size: 20px;
+     }
+     .city{
+        font-size: 30px;
+        font-weight: 500;
+
+     }
+     .temp{
+        font-size: 70px;
+        margin-bottom: 15px;
+     }
+     .desc{
+        font-size: 30px;
+        font-style: italic;
+     }
+     .gunes{
+        width: 70px;
+     }
+     
+     #zaman{
+       font-size: 20px;
+       color: #fff;
+       margin: 20px;
+       margin-left: 1700px;
+     }
+   
+     
+       
+     
+    
+

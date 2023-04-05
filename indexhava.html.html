@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu</title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <div class="app">
+        <div id="zaman"></div> 
+         <div class=" col seo-area-container">
+        <p class="seo-area-text">
+            Dünyanın önemli şehirleri ve Türkiye’nin tüm illerine ait hava tahminleri ve Meteoroloji’den alınan hava durumu raporu ile güncel veriler bu sayfada.
+        </p> </div>
+        <div class="header">
+            <h1>HAVA DURUMU</h1>
+            <input type="text" placeholder="Şehir Giriniz.." id="searchBar">
+        </div>
+        <div class="content">
+            <div class="city">Mersin,TR</div>
+            <div class="temp">25°C</div>
+            <div class="desc">Sunny</div>
+            <div class="minmax">19°C/25°C</div>
+          
+       
+        
+      
+    </div>
+    </div>
+    
+  
+
+    <script>
+    function tarihSaat(){
+        var date=new Date().toLocaleString(`tr-TR`);
+        document.getElementById(`zaman`).innerHTML=date;
+
+    }
+    setInterval(tarihSaat,1000);  //saniyede bir yenileme yapması için setinterval kullanırsın (1000 milisaniyede bir yenilenir)
+    </script>
+
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
